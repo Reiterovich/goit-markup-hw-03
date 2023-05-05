@@ -254,21 +254,19 @@ ol {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--What-are-we-doing);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .what-are-we-doing-section {
+  padding-bottom: 120px;
 }
+
 .what-are-items {
   display: flex;
-  padding-left: 156px;
-  padding-right: 156px;
+  gap: 24px;
 }
 
 .what-are-item {
-  padding-right: 24px;
-}
-.what-are-item:last-child {
-  padding-right: 0;
+  width: calc((100% - 48px) / 3);
 }
 
 /* Четверта секція */
