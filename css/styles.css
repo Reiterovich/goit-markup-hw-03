@@ -102,6 +102,7 @@ img {
   font-size: 18px;
   line-height: 1.17;
   color: var(--logo);
+  margin-right: 76px;
 }
 
 .logo-studio {
