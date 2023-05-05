@@ -70,18 +70,24 @@ img {
 
 .nav-bar-menu {
   display: flex;
+  align-items: center;
+}
+
+.first-header {
+  border-bottom: 1px solid #e7e9fc;
+  width: 1440px;
 }
 
 .header-block {
   display: flex;
   height: 72px;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
 }
 .nav-bar {
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-right: 332px;
 }
 
 .nav-bar:last-child {
@@ -96,7 +102,6 @@ img {
   font-size: 18px;
   line-height: 1.17;
   color: var(--logo);
-  margin-right: 76px;
 }
 
 .logo-studio {
