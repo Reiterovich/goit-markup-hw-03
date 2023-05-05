@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,26 +18,32 @@
     />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="first-header container section">
+      <nav class="nav-bar-menu flex">
         <a class="logo-studio-web link" href="./index.html" rel="WebStudio"
           >Web<span class="logo-studio">Studio</span></a
         >
         <ul class="nav-bar list">
           <li>
-            <a class="nav-bar-item link" href="./index.html">Studio</a>
+            <a class="nav-bar-item nav-bar-item-p link" href="./index.html"
+              >Studio</a
+            >
           </li>
           <li>
-            <a class="nav-bar-item link" href="./portfolio.html">Portfolio</a>
+            <a class="nav-bar-item nav-bar-item-p link" href="./portfolio.html"
+              >Portfolio</a
+            >
           </li>
           <li><a class="nav-bar-item link" href="">Contacts</a></li>
         </ul>
       </nav>
 
       <address class="address-header">
-        <ul class="list">
+        <ul class="list flex">
           <li>
-            <a class="address-header-item link" href="mailto:info@devstudio.com"
+            <a
+              class="address-header-item link address-p"
+              href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
@@ -47,29 +57,29 @@
     </header>
     <main>
       <!-- Перша секція -->
-      <section class="hero-back">
+      <section class="hero-back container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button class="button-hero" type="button">Order Service</button>
       </section>
       <!-- Друга секція -->
-      <section>
+      <section class="container section about-us-section">
         <h2 hidden class="about-us">About us</h2>
-        <ul class="link list">
-          <li>
+        <ul class="link list about-us-list">
+          <li class="about-us-item">
             <h3 class="about-us-title">Strategy</h3>
             <p class="about-us-direction">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
+          <li class="about-us-item">
             <h3 class="about-us-title">Punctuality</h3>
             <p class="about-us-direction">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
+          <li class="about-us-item">
             <h3 class="about-us-title">Diligence</h3>
             <p class="about-us-direction">
               Research and confirm brands that present the strongest digital
@@ -86,10 +96,10 @@
         </ul>
       </section>
       <!-- Третя секція -->
-      <section class="what-are-we-doing-section">
+      <section class="what-are-we-doing-section container">
         <h2 class="what-are-we-doing">What are we doing</h2>
-        <ul class="list">
-          <li>
+        <ul class="list what-are-items">
+          <li class="list what-are-item">
             <img
               width="360"
               height="300"
@@ -97,7 +107,7 @@
               alt="statistics"
             />
           </li>
-          <li>
+          <li class="list what-are-item">
             <img
               width="360"
               height="300"
@@ -105,7 +115,7 @@
               alt="chat-on-smartphone"
             />
           </li>
-          <li>
+          <li class="list what-are-item">
             <img
               width="360"
               height="300"
@@ -116,9 +126,9 @@
         </ul>
       </section>
       <!-- Четверта секція -->
-      <section class="our-team-section">
+      <section class="our-team-section container">
         <h2 class="our-team-title">Our Team</h2>
-        <ul class="list">
+        <ul class="list our-team-items">
           <li class="our-team-card">
             <img
               width="264"
@@ -163,14 +173,16 @@
       </section>
     </main>
     <!-- Підвал -->
-    <footer class="footer">
-      <a class="logo-footer link" href="./index.html" rel="WebStudio"
-        >Web<span class="logo-footer-studio">Studio</span></a
-      >
-      <p class="footer-direction">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+    <footer class="footer container">
+      <div class="footer-block">
+        <a class="logo-footer link" href="./index.html" rel="WebStudio"
+          >Web<span class="logo-footer-studio">Studio</span></a
+        >
+        <p class="footer-direction">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

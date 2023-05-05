@@ -37,15 +37,60 @@ body {
   background-color: var(--background);
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-left: 156px;
+  padding-right: 156px;
+}
+
+.flex {
+  display: flex;
+}
+
+.first-header {
+  display: flex;
+  height: 72px;
+  align-items: center;
+}
+.nav-bar {
+  display: flex;
+  margin-right: 332px;
+}
+
 .logo-studio-web {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   color: var(--logo);
+
+  margin-right: 76px;
 }
 
 .logo-studio {
@@ -67,6 +112,11 @@ body {
   line-height: 1.5;
   color: var(--nav-bar);
 }
+
+.nav-bar-item-p {
+  padding-right: 40px;
+}
+
 .nav-bar-item:hover,
 .nav-bar-item:focus {
   color: #404bbf;
@@ -82,40 +132,51 @@ body {
   color: var(--address);
 }
 
+.address-p {
+  padding-right: 40px;
+}
+
 .address-header-item:hover,
 .address-header-item:focus {
   color: #404bbf;
 }
 
+ul,
+ol {
+  padding-left: 0;
+}
+
+/* Перша секція */
+
 .hero-back {
   background: var(--background-hero);
+  height: 600px;
 }
 
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-left: 472px;
+  margin-right: 472px;
+  padding-top: 188px;
+  text-align: center;
 }
 
 .button-hero {
-  font-family: inherit;
+  width: 169px;
+  height: 56px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 16px 32px;
-  gap: 10px;
   color: #ffffff;
   background: #4d5ae5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   cursor: pointer;
+  margin-left: 636px;
+  margin-top: 48px;
 }
 
 .button-hero:hover,
@@ -125,7 +186,21 @@ body {
 
 /* Друга секція */
 
+.about-us-section {
+  height: 344px;
+}
+
 .about-us {
+}
+
+.about-us-item {
+  padding-right: 24px;
+}
+
+.about-us-list {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .about-us-title {
@@ -157,35 +232,56 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--What-are-we-doing);
+  padding-bottom: 72px;
 }
 .what-are-we-doing-section {
 }
+.what-are-items {
+  display: flex;
+  padding-left: 156px;
+  padding-right: 156px;
+}
+
+.what-are-item {
+  padding-right: 24px;
+}
+.what-are-item:last-child {
+  padding-right: 0;
+}
+
 /* Четверта секція */
 .our-team-section {
   background: #f4f4fd;
+  padding-left: 156px;
+  padding-right: 156px;
+  height: 732px;
+  margin-top: 120px;
 }
 
 .our-team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: var(--our-team-title);
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+
+.our-team-items {
+  display: flex;
 }
 
 .our-team-card {
   background: #ffffff;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 0px 32px;
-  gap: 32px;
+  margin-right: 24px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.our-team-card:last-child {
+  margin-right: 0px;
 }
 
 .our-team-name {
@@ -194,7 +290,6 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--our-team-name);
 }
@@ -203,13 +298,13 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--our-team-direction);
 }
 /* Підвал */
 .footer {
   background: var(--footer-backgraund);
+  height: 312px;
 }
 
 .logo-footer {
@@ -217,11 +312,16 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-footer-web);
+}
+
+.footer-block {
+  width: 264px;
+  height: 112px;
+  padding-top: 100px;
+  margin-left: 156px;
 }
 
 .logo-footer-studio {
@@ -234,6 +334,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-top: 18px;
 }
 
 /* Класи портфоліо */
