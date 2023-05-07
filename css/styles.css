@@ -220,8 +220,6 @@ ol {
 
 .about-us-list {
   display: flex;
-  padding-top: 120px;
-  padding-bottom: 120px;
   gap: 24px;
 }
 
