@@ -29,6 +29,7 @@ sans-serif; */
   --button-filter-backgraund: #f4f4fd;
   --title-card: #2e2f42;
   --direction-card: #434455;
+  --button-filter-border: #e7e9fc;
 }
 
 body {
@@ -374,12 +375,19 @@ ol {
   cursor: pointer;
   color: var(--button-filter-color);
   background: var(--button-filter-backgraund);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid var(--button-filter-border);
+  border-radius: 4px;
 }
 
 .button-filter:hover,
 .button-filter:focus {
   background: #404bbf;
   color: #ffffff;
+  border: 1px solid transparent;
 }
 
 .title-card {
@@ -388,6 +396,7 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-card);
+  margin-bottom: 8px;
 }
 
 .direction-card {
@@ -396,4 +405,39 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--direction-card);
+}
+
+.portfolio-block {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.portfolio-list:last-child {
+  margin-right: 0;
+}
+
+/* Другий список портфоліо */
+
+.portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-list-content {
+  width: calc((100% - 48px) / 3);
+}
+
+.name-app {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
