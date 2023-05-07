@@ -286,7 +286,7 @@ ol {
   letter-spacing: 0.02em;
   color: var(--our-team-title);
   text-align: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .our-team-items {
