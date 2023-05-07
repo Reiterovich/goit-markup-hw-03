@@ -75,7 +75,6 @@ img {
 
 .first-header {
   border-bottom: 1px solid #e7e9fc;
-  width: 1440px;
 }
 
 .header-block {
@@ -147,6 +146,7 @@ img {
   display: flex;
   gap: 40px;
 }
+
 .address-list:last-child {
   margin-right: 0px;
 }
@@ -167,7 +167,6 @@ ol {
   background: var(--background-hero);
   padding-top: 188px;
   padding-bottom: 188px;
-  width: 1440px;
 }
 
 .hero-title {
@@ -178,7 +177,7 @@ ol {
   color: #ffffff;
   max-width: 496px;
   text-align: center;
-  margin-left: 331px;
+  margin-left: 316px;
 }
 
 .button-hero {
@@ -196,7 +195,7 @@ ol {
   height: 56px;
   border: none;
   border-radius: 4px;
-  margin-left: 495px;
+  margin-left: 479px;
   margin-top: 48px;
 }
 
@@ -208,8 +207,8 @@ ol {
 /* Друга секція */
 
 .about-us-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .about-us-item {
@@ -273,10 +272,8 @@ ol {
 /* Четверта секція */
 .our-team-section {
   background: #f4f4fd;
-  padding-left: 156px;
-  padding-right: 156px;
-  height: 732px;
-  margin-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .our-team-title {
@@ -286,19 +283,21 @@ ol {
   letter-spacing: 0.02em;
   color: var(--our-team-title);
   text-align: center;
-  padding-top: 120px;
   padding-bottom: 72px;
 }
 
 .our-team-items {
   display: flex;
+  gap: 24px;
+}
+.our-team-items:last-child {
+  margin-right: 0;
 }
 
 .our-team-card {
   background: #ffffff;
-  margin-right: 24px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-radius: 0 0 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
 
 .our-team-card:last-child {
@@ -306,13 +305,13 @@ ol {
 }
 
 .our-team-name {
-  width: 134px;
-  height: 24px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--our-team-name);
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .our-team-direction {
@@ -321,11 +320,21 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--our-team-direction);
+  text-align: center;
 }
+
+.name-direction {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 /* Підвал */
 .footer {
   background: var(--footer-backgraund);
-  height: 312px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .logo-footer {
@@ -336,13 +345,8 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-footer-web);
-}
-
-.footer-block {
-  width: 264px;
-  height: 112px;
-  padding-top: 100px;
-  margin-left: 156px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-footer-studio {
@@ -356,6 +360,7 @@ ol {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   margin-top: 18px;
+  max-width: 264px;
 }
 
 /* Класи портфоліо */
